@@ -61,7 +61,7 @@ const RIDDLE_ONE_CONFIG = {
   symbols: {
     fox: {
       label: "Zorro",
-      image: "assets/riddle-1/z.png",
+      image: "assets/riddle-1/Z.png",
       fallback: "Z",
     },
     frog: {
