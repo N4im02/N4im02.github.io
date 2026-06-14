@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#071c1f" />
+    <title>La carta secreta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="phase phase--active" id="phase-decoder" aria-labelledby="decoder-title">
+        <header class="phase-header box-cover">
+          <div class="box-top-strip" aria-label="Datos del juego">
+            <span>Edad 12↓</span>
+            <span>1-2 personas</span>
+            <span>45←90 min</span>
+          </div>
+
+          <h1 class="game-title" id="decoder-title">
+            <span class="exit-logo" aria-hidden="true">
+              <span class="exit-word">EXIT</span>
+              <span class="exit-subline">
+                <span>THE</span>
+                <span>GAME</span>
+              </span>
+            </span>
+            <span class="episode-title">La carta secreta</span>
+          </h1>
+
+          <div class="cover-details" aria-label="Detalles de portada">
+            <span class="publisher-mark">MER</span>
+            <span class="level-mark">Nivel experto</span>
+          </div>
+        </header>
+
+        <section class="decoder-card" aria-label="Disco de decodificacion de tres capas">
+          <div class="decoder-labels" aria-label="Informacion de caja">
+            <span>Disco decodificador</span>
+            <span>↑↑↑</span>
+          </div>
+          <div class="lock-body" id="lock-body">
+            <div class="decoder-wheel" id="decoder-wheel" aria-label="Rueda de codigo">
+              <div class="wheel-pointer" aria-hidden="true">
+                <span></span>
+              </div>
+              <div
+                class="wheel-ring wheel-ring--outer"
+                data-ring="0"
+                role="slider"
+                aria-label="Anillo exterior"
+                aria-valuemin="0"
+                aria-valuemax="9"
+                aria-valuenow="0"
+                tabindex="0"
+              ></div>
+              <div
+                class="wheel-ring wheel-ring--middle"
+                data-ring="1"
+                role="slider"
+                aria-label="Anillo central"
+                aria-valuemin="0"
+                aria-valuemax="9"
+                aria-valuenow="0"
+                tabindex="0"
+              ></div>
+              <div
+                class="wheel-ring wheel-ring--inner"
+                data-ring="2"
+                role="slider"
+                aria-label="Anillo interior"
+                aria-valuemin="0"
+                aria-valuemax="9"
+                aria-valuenow="0"
+                tabindex="0"
+              ></div>
+              <div class="wheel-core" id="wheel-core" aria-hidden="true">MER <3</div>
+            </div>
+
+            <div class="wheel-readout" id="wheel-readout" aria-live="polite">
+              <span data-readout="0">0</span>
+              <span data-readout="1">0</span>
+              <span data-readout="2">0</span>
+            </div>
+
+            <div class="lock-window" aria-live="polite">
+              <p class="lock-status" id="lock-status">Introduce el codigo correcto</p>
+            </div>
+          </div>
+          <button class="primary-action" type="button" id="try-code">Abrir</button>
+        </section>
+
+        <div class="modal-backdrop" id="phase-one-success-modal" hidden>
+          <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="phase-one-success-title">
+            <span class="modal-kicker">Codigo correcto</span>
+            <h2 id="phase-one-success-title">La rueda se ha abierto</h2>
+            <p id="phase-one-success-message"></p>
+            <button class="modal-action" type="button" id="go-phase-two"></button>
+          </div>
+        </div>
+
+        <section class="riddle-grid" aria-label="Acertijos">
+          <article class="riddle-card riddle-card--sun">
+            <div class="riddle-topline">
+              <span class="riddle-number">Prueba 1</span>
+              <span class="riddle-tag">Balanza veterinaria</span>
+            </div>
+            <div class="equation-board" id="riddle-one-equations" aria-label="Ecuaciones visuales de animales"></div>
+          </article>
+
+          <article class="riddle-card riddle-card--sea">
+            <div class="riddle-topline">
+              <span class="riddle-number">Prueba 2</span>
+              <span class="riddle-tag">Fragmentos</span>
+            </div>
+            <div class="fragment-puzzle" id="riddle-two-puzzle" aria-label="Puzzle fragmentado intercambiable"></div>
+          </article>
+
+          <article class="riddle-card riddle-card--berry">
+            <div class="riddle-topline">
+              <span class="riddle-number">Prueba 3</span>
+              <span class="riddle-tag">Brujula</span>
+            </div>
+            <ol class="clue-chain">
+              <h2>Sigue las señales y al final el número encontrarás.</h2>
+            </ol>
+            <div class="clue-image-frame" id="riddle-three-image" aria-label="Imagen de la tercera prueba"></div>
+          </article>
+        </section>
+
+        <section class="box-back-panel" aria-label="Detalles de contraportada">
+          <div class="story-copy">
+            <span class="panel-label">La historia</span>
+            <p>
+              Una carta muy importante ha sido robada, tu misión es encontrarla y descifrar su contenido.
+              Se dice que fue vista en manos de un felino, para llegar hasta él deberás superar los tres acertijos
+              y descubrir el código secreto que te permitirá desbloquear el docodificador y avanzar hasta donde está escondido
+              el ladrón.
+            </p>
+          </div>
+
+          <div class="box-spec-grid" aria-label="Especificaciones del juego">
+            <span><strong>Pistas</strong> 2→</span>
+            <span><strong>Pruebas</strong> 3</span>
+            <span><strong>Discos</strong> 1</span>
+            <span><strong>Final</strong> Secreto</span>
+          </div>
+
+          <div class="warning-band">
+            No beses a tu interlocutor hasta que las pruebas lo indiquen.
+          </div>
+        </section>
+
+        <section class="manufacturing-panel" aria-label="Informacion impresa de caja">
+          <div class="component-list">
+            <span class="panel-label">Contenido</span>
+            <p>1 disco decodificador, 3 pruebas, 1 escena oculta, 1 carta final.</p>
+            <p>
+              🪼 = 4
+            </p>
+          </div>
+
+          <div class="tiny-rules">
+            <p>Ref. MER-444</p>
+            <p>Edicion privada</p>
+            <p>Lote 26-06-26</p>
+          </div>
+
+          <div class="barcode-box" aria-label="Codigo de barras decorativo">
+            <div class="barcode-lines"></div>
+            <span>9 772649 041206</span>
+          </div>
+        </section>
+      </section>
+
+      <section class="phase phase--search" id="phase-search" aria-labelledby="search-title" hidden>
+        <div class="phase-two-stage" id="phase-two-stage">
+          <img class="phase-two-bg" id="phase-two-bg" alt="Escena de busqueda" draggable="false" />
+          <button class="phase-two-hitbox" id="phase-two-hitbox" type="button" aria-label="Zona secreta"></button>
+        </div>
+
+        <div class="modal-backdrop" id="phase-two-intro-modal" hidden>
+          <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="phase-two-intro-title">
+            <span class="modal-kicker">Fase 2</span>
+            <h2 id="phase-two-intro-title">Encuentra la carta</h2>
+            <div class="modal-image-frame modal-image-frame--large">
+              <img id="phase-two-intro-image" alt="" draggable="false" />
+              <span class="modal-image-fallback">Imagen pendiente</span>
+            </div>
+            <p id="phase-two-intro-message"></p>
+            <button class="modal-action" type="button" id="close-phase-two-intro"></button>
+          </div>
+        </div>
+
+        <div class="modal-backdrop" id="phase-two-found-modal" hidden>
+          <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="phase-two-found-title">
+            <span class="modal-kicker">Miau</span>
+            <h2 id="phase-two-found-title">Lo has encontrado! (Puedes darle un beso al interlocutor)</h2>
+            <div class="modal-image-frame modal-image-frame--large">
+              <img id="phase-two-found-image" alt="" draggable="false" />
+              <span class="modal-image-fallback">PNG pendiente</span>
+            </div>
+            <p id="phase-two-found-message"></p>
+            <button class="modal-action" type="button" id="go-phase-three"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="phase phase--letter" id="phase-letter" aria-labelledby="letter-title" hidden>
+        <div class="love-hearts" aria-hidden="true"></div>
+
+        <div class="letter-step letter-step--active" id="letter-envelope-step">
+          <button class="pixel-envelope" id="open-envelope" type="button" aria-label="Abrir la carta">
+            <img id="envelope-image" alt="Sobre con corazon" draggable="false" />
+            <span class="envelope-fallback" aria-hidden="true"></span>
+          </button>
+          <h1 class="letter-open-title" id="letter-title">¡Carta para Mer!</h1>
+          <p class="letter-open-message" id="letter-open-message"></p>
+        </div>
+
+        <div class="letter-step" id="letter-window-step" hidden>
+          <article class="love-window" aria-labelledby="love-window-title">
+            <header class="love-window-bar">
+              <h2 id="love-window-title">LOV U <3</h2>
+              <div class="window-controls" aria-hidden="true">
+                <span>-</span>
+                <span>□</span>
+                <span>x</span>
+              </div>
+            </header>
+            <div class="love-heart-row" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="love-letter-body">
+              <img class="pixel-cat-ghost" id="letter-cat-image" alt="" draggable="false" />
+              <div class="love-letter-text" id="love-letter-text"></div>
+            </div>
+            <button class="love-action" id="continue-to-question" type="button"></button>
+          </article>
+        </div>
+
+        <div class="letter-step" id="love-question-step" hidden>
+          <section class="love-window love-window--question" aria-labelledby="love-question-title">
+            <header class="love-window-bar">
+              <h2>LOV U <3</h2>
+              <div class="window-controls" aria-hidden="true">
+                <span>-</span>
+                <span>□</span>
+                <span>x</span>
+              </div>
+            </header>
+            <div class="love-heart-row" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="question-stage" id="question-stage">
+              <p class="question-message" id="love-question-title"></p>
+              <img class="pixel-cat-big" id="question-cat-image" alt="" draggable="false" />
+              <div class="answer-row">
+                <button class="yes-button" id="yes-button" type="button">Si!</button>
+                <button class="no-button" id="no-button" type="button">No:c</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="letter-step" id="love-final-step" hidden>
+          <section class="love-final-card" aria-live="polite">
+            <p id="love-final-message"></p>
+            <img class="pixel-cat-big pixel-cat-big--happy" id="final-cat-image" alt="" draggable="false" />
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
