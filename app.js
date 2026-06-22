@@ -1,6 +1,6 @@
 const GAME_CONFIG = {
-  phaseOneCode: [2, 6, 3],
-  letterHint: "HMMMMM 26-03 esa fecha me suena familiar :). (Puedes darle un beso al interlocutor)",
+  phaseOneCode: [2, 7, 3],
+  letterHint: "HMMMMM 27-03 esa fecha me suena familiar :). (Puedes darle un beso al interlocutor)",
 };
 
 const DECODER_VISUAL_CONFIG = {
@@ -14,7 +14,7 @@ const DECODER_VISUAL_CONFIG = {
 };
 
 const PHASE_ONE_SUCCESS_CONFIG = {
-  message: "HMMMMM 26-03 esa fecha me suena familiar :). (Puedes darle un beso al interlocutor)",
+  message: "HMMMMM 27-03 esa fecha me suena familiar :). (Puedes darle un beso al interlocutor)",
   buttonLabel: "Continuar",
 };
 
