@@ -46,7 +46,7 @@ const PHASE_THREE_CONFIG = {
   noAttemptCatImage: "assets/phase-3/gatopistola.jpg",
   finalCatImage: "assets/phase-3/cats.webp",
   envelopeMessage: "Pulsa en el sobre para abrir tu carta.",
-  continueButtonLabel: "Continuar",
+  continueButtonLabel: "Ir a la pregunta",
   letterParagraphs: [
     "Como ya te dije en lo que te escribí hace unas semanas, he pasado mucho tiempo buscando algo, o mejor dicho, a alguien. Alguien que quiera como yo quiero, alguien que me trate como yo trato a las personas que quiero. Y creo que contigo lo he encontrado: he encontrado a la persona que llevaba tanto tiempo buscando. :)",
     "Me acuerdo de nuestra primera cita, cuando te vi por primera vez y me puse nervioso de lo guapa que eras. Pensé: «Uy, qué guapa es». Y aún sigo pensando exactamente lo mismo cada vez que te veo aparecer (menos mal que ya no me pongo nervioso).",
