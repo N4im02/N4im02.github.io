@@ -48,16 +48,17 @@ const PHASE_THREE_CONFIG = {
   envelopeMessage: "Pulsa en el sobre para abrir tu carta.",
   continueButtonLabel: "Ir a la pregunta",
   letterParagraphs: [
+    "Hola mi guapa :)",
     "Como ya te dije en lo que te escribí hace unas semanas, he pasado mucho tiempo buscando algo, o mejor dicho, a alguien. Alguien que quiera como yo quiero, alguien que me trate como yo trato a las personas que quiero. Y creo que contigo lo he encontrado: he encontrado a la persona que llevaba tanto tiempo buscando. :)",
     "Me acuerdo de nuestra primera cita, cuando te vi por primera vez y me puse nervioso de lo guapa que eras. Pensé: «Uy, qué guapa es». Y aún sigo pensando exactamente lo mismo cada vez que te veo aparecer (menos mal que ya no me pongo nervioso).",
     "También me acuerdo de nuestro primer beso, ese mismo día. Me lo pasé tan bien contigo y me sentí tan cómodo siendo yo mismo que no pude evitar las ganas que tenía de darte un beso. Un beso que, además, nos dimos justo en este mismo sitio donde estás leyendo esta carta. :)",
-    "Desde entonces me has tratado mejor de lo que nadie me ha tratado nunca. Contigo he vuelto a permitirme sentir de verdad. Te quiero, me haces feliz y me encanta estar contigo. De hecho, me gusta más estar contigo que estar solo (creo que eso se nota; desde que volví de Tailandia hemos estado separados cuatro días contados, jejeje).",
+    "Desde entonces me has tratado mejor de lo que nadie me ha tratado nunca. Te quiero, me haces feliz y me encanta estar contigo. De hecho, me gusta más estar contigo que estar solo (creo que eso se nota; desde que volví de Tailandia hemos estado separados cuatro días contados, jejeje).",
     "Contigo puedo ser yo mismo (que seamos igual de tontos ayuda jeje). Te quiero de verdad. Te quiero en mi vida. :)",
     "Y precisamente por eso estoy escribiendo esta carta. Ya sabes de sobra lo que te voy a preguntar. Perdón por haber tardado un poco en hacerlo, pero, ¡oye!, quería que fuese especial. Quería currármelo.",
     "Ya no vas a poder decir que estás soltera... o sí (gato pistola).",
     "Pero bueno, aquí va la pregunta más importante que he hecho en mi vida hasta ahora:",
   ],
-  questionMessage: "Quieres ser mi novia?",
+  questionMessage: "¿Quieres ser mi novia?",
   finalMessage: "SIIII! Tampoco podias decir que no ejjejejeje.",
 };
 
